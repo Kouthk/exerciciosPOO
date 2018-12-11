@@ -1,3 +1,4 @@
+// i've made this question with no OO. Just pure Java.
 package lista1;
 
 import java.util.Scanner;

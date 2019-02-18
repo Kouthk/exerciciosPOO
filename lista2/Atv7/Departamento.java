@@ -1,14 +1,19 @@
 package Atv7;
 
+import java.util.ArrayList;
+
 public class Departamento {
     private String nome;
     private String descricao;
-    private Produto produtos;
+    private ArrayList<Produto> produtos =  new ArrayList<>();
     
-    public Departamento(String nome, String descricao, Produto produtos) {
+    public Departamento(String nome, String descricao) {
         this.nome = nome;
         this.descricao = descricao;
-        this.produtos = produtos;
+    }
+
+    void addProduto (Produto produto){
+        this.produtos.add(produto);
     }
 
     public String getNome() {
@@ -27,11 +32,11 @@ public class Departamento {
         this.descricao = descricao;
     }
 
-    public Produto getProdutos() {
+    public ArrayList<Produto> getProdutos() {
         return produtos;
     }
 
-    public void setProdutos(Produto produtos) {
+    public void setProdutos(ArrayList<Produto> produtos) {
         this.produtos = produtos;
     }
 }

@@ -3,8 +3,15 @@ package Atv7;
 public class Produto {
     private String nome;
     private double preco;
-    private double valor;
     private Departamento departamento;
+
+    public Produto(String nome, double preco, Departamento departamento) {
+        this.nome = nome;
+        this.preco = preco;
+        this.departamento = departamento;
+    }
+
+    public Produto() {}
 
     public String getNome() {
         return nome;
@@ -18,17 +25,8 @@ public class Produto {
         return preco;
     }
 
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
+    public void setPreco(double preco) { this.preco = preco; }
 
-    public double getValor() {
-        return valor;
-    }
-
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
 
     public Departamento getDepartamento() {
         return departamento;

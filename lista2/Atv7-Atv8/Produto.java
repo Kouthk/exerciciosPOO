@@ -1,4 +1,4 @@
-package Atv7-Atv8;
+package Atv7Atv8;
 
 public class Produto {
     private String nome;

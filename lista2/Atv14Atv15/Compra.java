@@ -1,14 +1,14 @@
-package Atv14;
+package Atv14Atv15;
 
-public class Venda {
+public class Compra {
     private Produto produto;
     private int quantidade;
     private Cliente cliente;
     private Fornecedor fornecedor;
 
-    Venda() {}
+    Compra() {}
 
-    public Venda(Produto produto, int quantidade, Cliente cliente, Fornecedor fornecedor) {
+    public Compra(Produto produto, int quantidade, Cliente cliente, Fornecedor fornecedor) {
         this.produto = produto;
         this.quantidade = quantidade;
         this.cliente = cliente;

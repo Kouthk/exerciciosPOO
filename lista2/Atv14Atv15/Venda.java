@@ -1,18 +1,20 @@
-package Atv14;
+package Atv14Atv15;
 
-public class Compra {
+public class Venda {
     private Produto produto;
     private int quantidade;
     private Cliente cliente;
     private Fornecedor fornecedor;
+    private Vendedor vendedor;
 
-    Compra() {}
+    Venda() {}
 
-    public Compra(Produto produto, int quantidade, Cliente cliente, Fornecedor fornecedor) {
+    public Venda(Produto produto, int quantidade, Cliente cliente, Fornecedor fornecedor, Vendedor vendedor) {
         this.produto = produto;
         this.quantidade = quantidade;
         this.cliente = cliente;
         this.fornecedor = fornecedor;
+        this.vendedor = vendedor;
     }
 
     public Produto getProduto() {
@@ -45,5 +47,13 @@ public class Compra {
 
     public void setFornecedor(Fornecedor fornecedor) {
         this.fornecedor = fornecedor;
+    }
+
+    public Vendedor getVendedor() {
+        return vendedor;
+    }
+
+    public void setVendedor(Vendedor vendedor) {
+        this.vendedor = vendedor;
     }
 }

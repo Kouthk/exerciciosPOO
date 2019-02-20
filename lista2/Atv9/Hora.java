@@ -30,4 +30,16 @@ public class Hora {
     public void setMinutos(String minutos) {
         this.minutos = minutos;
     }
+
+    public String toString() {
+        String s = "";
+        if (this.getMinutos() != null) {
+            s += "Minutos:" + getMinutos();
+        }
+        if (this.getSegundos() != null) {
+            s += "Segundos:" + getSegundos();
+        }
+
+        return s;
+    }
 }

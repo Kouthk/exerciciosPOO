@@ -4,9 +4,6 @@ public class Data {
     private String dia;
     private String mes;
     private String ano;
-    private int diaInt;
-    private int mesInt;
-    private int anoInt;
 
     Data() {}
 
@@ -21,11 +18,6 @@ public class Data {
         this.ano = ano;
     }
 
-    Data(int diaInt, int mesInt, int anoInt) {
-        this.dia = dia;
-        this.mes = mes;
-        this.ano = ano;
-    }
 
     public String getDia() {
         return dia;
@@ -51,27 +43,19 @@ public class Data {
         this.ano = ano;
     }
 
-    public int getDiaInt() {
-        return diaInt;
-    }
+    public String toString() {
+        String s = "";
+        if (this.getDia() != null) {
+            s += "Dia:" + getDia();
+        }
+        if (this.getMes() != null) {
+            s += "Mes:" + getDia();
+        }
+        if (this.getMes() != null) {
+            s += "Mes:" + getAno();
+        }
 
-    public void setDiaInt(int diaInt) {
-        this.diaInt = diaInt;
-    }
+        return s;
 
-    public int getMesInt() {
-        return mesInt;
-    }
-
-    public void setMesInt(int mesInt) {
-        this.mesInt = mesInt;
-    }
-
-    public int getAnoInt() {
-        return anoInt;
-    }
-
-    public void setAnoInt(int anoInt) {
-        this.anoInt = anoInt;
     }
 }
